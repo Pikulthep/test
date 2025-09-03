@@ -1,0 +1,601 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id="CBS.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/Kc0b6qMm/IMG-2484.png", CBSSN
+https://fl5.moveonjoy.com/CBS_SPORTS_NETWORK/index.m3u8
+
+#EXTINF:-1 tvg-id="MLB.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/s2qD7bRx/IMG-2227.png", MLB Network 
+http://143.244.60.30/MLB_NETWORK/index.m3u8
+
+#EXTINF:-1 tvg-id="MSG.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/B6cf6H5s/IMG-2331.png", MSG
+https://fl3.moveonjoy.com/MSG/index.m3u8
+
+#EXTINF:-1 tvg-id="NFL.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/L8QYk7xP/IMG-2245.webp", NFL Network 
+http://143.244.60.30/NFL_NETWORK/index.m3u8
+ 
+#EXTINF:-1 tvg-id="YESnetwork.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/kgPQFhqj/IMG-2228.png", Yes Network 
+https://fl5.moveonjoy.com/YES_NETWORK/index.m3u8
+
+#EXTINF:-1 tvg-id="ACCN.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/Bnr0r4xF/IMG-2605.png", ACC Network 
+https://fl3.moveonjoy.com/ACC_NETWORK/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-id="BTN.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/3xD63xrw/IMG-2326.png", Big Ten Network 
+http://fl3.moveonjoy.com/BIG_TEN_NETWORK/index.m3u8
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇨🇦 Canada" tvg-logo="https://i.postimg.cc/Yqs13frp/IMG-3086.png", SportsNet world 
+http://fortv.cc:8080/0n8u9R/169324/75675
+
+#EXTINF:-1 tvg-id="Sportsnet.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/pdDX18Dj/IMG-2344.png", SportsNet New York
+https://fl3.moveonjoy.com/SNY/index.m3u8 
+
+#EXTINF:-1 tvg-id="NBA.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/d14MK3D5/IMG-2486.png", NBA TV
+https://fl3.moveonjoy.com/NBA_TV/index.m3u8
+
+#EXTINF:-1 tvg-id="Tennis.us" group-title="🎾 Tennis" tvg-logo="https://i.postimg.cc/sgJ0JczR/IMG-2224.png", Tennis Channel 
+http://212.102.60.231/TENNIS_CHANNEL/index.m3u8
+
+#EXTINF:-1 tvg-id="Tennischannel.us" group-title="🎾 Tennis" tvg-logo="https://i.postimg.cc/132vh9f1/IMG-2890.png", Tennis Channel 2
+https://tinyurl.com/ytk5xhvu
+
+#EXTINF:-1 tvg-id="TennisChannel.uk" group-title="🎾 Tennis" tvg-logo="https://i.postimg.cc/W43R9LsR/IMG-2658.png", Tennis Channel UK
+https://tennischannel-int-samsunguk.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Tennis.uk" group-title="🎾 Tennis" tvg-logo="https://i.postimg.cc/pLp2cFWX/IMG-2652.png", Tennis Plus 
+https://amg01935-amg01935c1-amgplt0165.playout.now3.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Bein.us" group-title="🌍 beIN Sports" tvg-logo="https://i.postimg.cc/zfDNbnp7/IMG-2011.png", Bein Sports
+https://fl5.moveonjoy.com/BEIN_SPORTS/index.m3u8
+
+#EXTINF:-1 tvg-id="Bein.us" group-title="🌍 beIN Sports" tvg-logo="https://i.postimg.cc/FsRkm6B3/IMG-3115.png", Bein Sports 1
+http://5.252.33.34:88/live/559684668698871/559684668698871/5195.ts
+
+#EXTINF:-1 tvg-id="Bein.us" group-title="🌍 beIN Sports" tvg-logo="https://i.postimg.cc/Mp0SL6mD/IMG-3087.png", Bein Sports 2
+http://5.252.33.34:88/live/559684668698871/559684668698871/5196.ts
+
+#EXTINF:-1 tvg-id="Bein.us" group-title="🌍 beIN Sports" tvg-logo="https://i.postimg.cc/Dy9vDYk2/IMG-3090.png",Bein Sports 3
+http://89.34.226.60:8080/mac_648121/71296741463ae045d99bc5/172280
+
+#EXTINF:-1 tvg-id="Bein.us" group-title="🌍 beIN Sports" tvg-logo="https://i.postimg.cc/xdjDpL1X/IMG-2488.png", Bein Sports xtra 
+https://bein-xtra-xumo.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Bein.es" group-title="🌍 beIN Sports" tvg-logo="https://i.postimg.cc/2y77tL65/IMG-2490.png", Bein Sports xtra esp
+https://bein-esp-xumo.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ESPN.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/ZR75p0QB/IMG-2907.png", ESPN 
+https://stream1.freetv.fun/8bac4c2416bc144d1ec171cd4cc1104bb343152869bdccd214f0bb84dbb11af2.ctv
+
+#EXTINF:-1 tvg-id="Sport.br" group-title="🇧🇷 Brazil" tvg-logo="https://i.postimg.cc/qMhQFgKK/IMG-3711.png", ESPN br
+http://rktprotec.site:80/779948/150113/2042449
+
+#EXTINF:-1 tvg-id="ESPN.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/gcTBS4yX/IMG-2607.png", ESPN 2
+http://143.244.60.30/ESPN_2/index.m3u8
+
+#EXTINF:-1 tvg-id="Sport.br" group-title="🇧🇷 Brazil" tvg-logo="https://i.postimg.cc/fRs20D30/IMG-3713.png", ESPN 2 br
+http://rktprotec.site:80/779948/150113/2042452
+
+#EXTINF:-1 tvg-id="Sport.br" group-title="🇧🇷 Brazil" tvg-logo="https://i.postimg.cc/hjVQxWQf/IMG-3715.png", ESPN 3 br
+http://rktprotec.site:80/779948/150113/2042456
+
+#EXTINF:-1 tvg-id="Sport.br" group-title="🇧🇷 Brazil" tvg-logo="https://i.postimg.cc/mD1JyVTc/IMG-3717.png", ESPN 4 br
+http://rktprotec.site:80/779948/150113/2042458
+
+#EXTINF:-1 tvg-id="Sport.br" group-title="🇧🇷 Brazil" tvg-logo="https://i.postimg.cc/QMVKSYVJ/IMG-3720.png", ESPN 5 br
+http://rktprotec.site:80/779948/150113/2042461
+
+#EXTINF:-1 tvg-id="Sport.br" group-title="🇧🇷 Brazil" tvg-logo="https://i.postimg.cc/W44Y8VMY/IMG-3722.png", ESPN 6 br
+http://rktprotec.site:80/779948/150113/2042464
+
+#EXTINF:-1 tvg-id="ESPN.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/sD3kgp5w/IMG-2497.png", ESPN U
+https://fl3.moveonjoy.com/ESPN_U/index.m3u8
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/qvJbkpdQ/IMG-3113.png", ESPN PLL
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=14010
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇦🇷 Argentina" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/1280px-ESPN_Premium_logo.svg.png", ESPN Premium 
+http://195.66.210.10:80/VictorLP/GURWX/215252
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/zfRphKPG/IMG-3705.png", ESPN Plus 
+http://mypanel-4k.com/live/me52pjdqa6/dt2t9r16ja/1317123.ts
+
+#EXTINF:-1 tvg-id="Sport.br" group-title="🇧🇷 Brazil" tvg-logo="https://logodownload.org/wp-content/uploads/2017/07/sportv-logo-2-1.png", Sportv 1
+http://rktprotec.site:80/779948/150113/2044364
+
+#EXTINF:-1 tvg-id="Sport.br" group-title="🇧🇷 Brazil" tvg-logo="https://i.postimg.cc/FHmqbWXn/IMG-3695.png", Sportv 2
+http://rktprotec.site:80/779948/150113/2044367
+
+#EXTINF:-1 tvg-id="Sport.br" group-title="🇧🇷 Brazil" tvg-logo="https://i.postimg.cc/rwSnKSdC/IMG-3692.png", Sportv 3
+http://rktprotec.site:80/779948/150113/2044370
+
+#EXTINF:-1 tvg-id="Foxsports.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/zv9BSgXw/IMG-2104.png", Fox Sports 1
+http://23.237.104.106:8080/USA_FS1/index.m3u8
+
+#EXTINF:-1 tvg-id="Foxsports.us" group-title="🇺🇸 USA" tvg-logo="https://i.postimg.cc/dVR1rDMd/IMG-2105.png", Fox Sports 2
+http://23.237.104.106:8080/USA_FS2/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky.uk" group-title="🇬🇧 UK" tvg-logo="https://i.postimg.cc/y84fsGW0/IMG-3231.png", Sky Sports epl
+http://150.129.9.194:8089/118/index.m3u8?token=test
+
+#EXTINF:-1 tvg-id="Sports.nz" group-title="🇳🇿 New Zealand" tvg-logo="https://i.postimg.cc/QN6y2GYJ/IMG-3043.png", Sky Sport Premier League
+http://xott.live:8080/03459612396/9512563/350425
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇮🇹 Italy" tvg-logo="https://i.postimg.cc/5tF2NxMs/IMG-3804.png", Sky Sport Calcio
+http://germanytv.net:8080/play/live.php?mac=A0:BB:3E:02:78:09&stream=244095&extension=m3u8
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇬🇧 UK" tvg-logo="https://i.postimg.cc/jqH4QJ99/IMG-3080.png", Sky Sports Main Event 
+http://cord-cutter.net:8080/100606595/100606595/137720
+
+#EXTINF:-1 tvg-id="Sky.uk" group-title="🇬🇧 UK" tvg-logo="https://i.postimg.cc/nh71tPrw/IMG-2938.png", Sky Sports mix
+https://stream1.freetv.fun/sky-sports-mix-1.ctv
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇮🇹 Italy" tvg-logo="https://i.postimg.cc/kM0bGT26/IMG-3463.png", Sky Sport arena 
+http://cord-cutter.net:8080/100606595/100606595/137719
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇮🇹 Italy" tvg-logo="https://i.postimg.cc/Hskt0ZpS/IMG-3461.png", Sky Sport basket
+http://45.139.122.199:2095/play/live.php?mac=10:27:BE:15:AD:91&stream=51123&extension=ts
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🎾 Tennis" tvg-logo="https://i.postimg.cc/pdw38HjH/IMG-3075.png", Sky Sports tennis 
+http://45.139.122.199:2095/play/live.php?mac=10:27:BE:15:AD:91&stream=51113&extension=ts
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="⛳ Golf" tvg-logo="https://i.postimg.cc/Vk0NcXjL/IMG-3084.png", Sky Sports golf 
+http://9tl7o5bs.rostelekom.xyz/iptv/LQ3H9GP9M7UA6M/9293/index.m3u8
+
+#EXTINF:-1 tvg-id="Sky.uk" group-title="🏎 Motorsport" tvg-logo="https://i.postimg.cc/fLkZVX6p/IMG-2931.png", Sky Sports F1 
+https://stream1.freetv.fun/sky-sports-f1-9.ctv
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🏎 Motorsport" tvg-logo="https://i.postimg.cc/bJLm8Kyt/IMG-3466.png", Sky Sport MotoGP
+http://45.139.122.199:2095/play/live.php?mac=10:27:BE:15:AD:91&stream=51122&extension=ts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇿🇦 South Africa – SuperSport" tvg-logo="https://i.postimg.cc/7LNt84JR/IMG-3789.png", SuperSport Premier League 
+http://145.239.5.177:80/566/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇿🇦 South Africa – SuperSport" tvg-logo="https://i.postimg.cc/4NbWhZBx/IMG-3792.png", SuperSport Football 
+http://145.239.5.177/564/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇿🇦 South Africa – SuperSport" tvg-logo="https://i.postimg.cc/1t8nCypF/IMG-3868.webp", SuperSport PSL
+http://145.239.5.177/562/index.m3u8
+
+#EXTINF:-1 tvg-id="TSNsports.ca" group-title="🇨🇦 Canada – TSN" tvg-logo="https://i.postimg.cc/brNnZbVm/IMG-2110.png", TSN 1
+http://1tv41.icu:8080/ahx4CN/815233/57292
+
+#EXTINF:-1 tvg-id="TSNsports.ca" group-title="🇨🇦 Canada – TSN" tvg-logo="https://i.postimg.cc/L65fRt1X/IMG-2109.png", TSN 2
+http://143.244.60.30/TSN_2/index.m3u8
+
+#EXTINF:-1 tvg-id="TSNsports.ca" group-title="🇨🇦 Canada – TSN" tvg-logo="https://i.postimg.cc/KYSgnCsk/IMG-2108.png", TSN 3
+http://143.244.60.30/TSN_3/index.m3u8
+
+#EXTINF:-1 tvg-id="TSNsports.ca" group-title="🇨🇦 Canada – TSN" tvg-logo="https://i.postimg.cc/Y9tGPY7t/IMG-2107.png", TSN 4
+http://1tv41.icu:8080/ahx4CN/815233/16130
+
+#EXTINF:-1 tvg-id="TSNsports.ca" group-title="🇨🇦 Canada – TSN" tvg-logo="https://i.postimg.cc/Y2nGXvsw/IMG-2106.png", TSN 5
+http://212.102.60.231/TSN_5/index.m3u8
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇬🇧 UK – TNT Sports" tvg-logo="https://i.postimg.cc/CKSpWCpV/IMG-2978.png", TNT Sports 1 
+http://178.33.239.54:8080/509/index.m3u8
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇬🇧 UK – TNT Sports" tvg-logo="https://i.postimg.cc/bJvcvzvC/IMG-2979.png", TNT Sports 2
+https://thunderbolt-40gbps.com/live/tFF5uEu7/GZBf5DzP/200167175
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇬🇧 UK – TNT Sports" tvg-logo="https://i.postimg.cc/66gJ9xxc/IMG-2980.png", TNT Sports 3
+http://150.129.9.194:8089/143/index.m3u8?token=test
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇬🇧 UK – TNT Sports" tvg-logo="https://i.postimg.cc/v85ssM29/IMG-3093.png", TNT Sports 4
+http://150.129.9.194:8089/146/index.m3u8?token=test
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇦🇷 Argentina" tvg-logo="https://i.postimg.cc/0yfZ1WYw/IMG-3736.png", TNT Sports Premium 
+http://195.66.210.10:80/ZMHZE/YFKQW/36424
+
+#EXTINF:-1 tvg-id="SPOTV.kr" group-title="🇹🇭 Thailand – SPOTV" tvg-logo="https://i.postimg.cc/BvgLVYdF/IMG-2904.png", SPOTV
+https://github.com/BONDiptv/m3u8/raw/refs/heads/main/truespotv1.m3u8
+
+#EXTINF:-1 tvg-id="SPOTV.kr" group-title="🇹🇭 Thailand – SPOTV" tvg-logo="https://i.postimg.cc/8cHT19md/IMG-2906.png", SPOTV 2
+https://github.com/BONDiptv/m3u8/raw/refs/heads/main/truespotv2.m3u8
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇪🇺 Europe – Eurosport" tvg-logo="https://i.postimg.cc/jS28DWnB/IMG-3332.png", Eurosport 1
+http://89.44.229.22:7000/eurosport
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇪🇺 Europe – Eurosport" tvg-logo="https://i.postimg.cc/zBrSF33z/IMG-3333.png", Eurosport 2
+http://185.189.225.157/EuroSport2/index.m3u8
+
+#EXTINF:-1 tvg-id="DAZN.us" group-title="🌍 DAZN" tvg-logo="https://i.postimg.cc/yNNmrSt5/IMG-2154.png", DAZN 1
+http://212.102.60.231/DAZN_1/index.m3u8
+
+#EXTINF:-1 tvg-id="DAZN.us" group-title="🌍 DAZN" tvg-logo="https://i.postimg.cc/Kz6tzpjS/IMG-2155.png", DAZN 2
+http://212.102.60.231/DAZN_2/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 DAZN" tvg-logo="https://i.postimg.cc/ZKBjgZhJ/IMG-3807.png", DAZN 3
+http://nocable.cc:8080/2gKWFe/362900/167748
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 DAZN" tvg-logo="https://i.postimg.cc/d3vk92v7/IMG-3810.png", DAZN 4
+http://nocable.cc:8080/2gKWFe/362900/167749
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 DAZN" tvg-logo="https://i.postimg.cc/ZnpkJNyL/IMG-3812.png", DAZN 5
+http://nocable.cc:8080/2gKWFe/362900/167750
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇪🇸 Spain – DAZN" tvg-logo="https://i.postimg.cc/R0BdW4gC/IMG-3627.png", DAZN LaLiga 
+http://tv.zapping.life:8080/Maximo003/dNyY9k8v4N/94467
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇪🇸 Spain – DAZN" tvg-logo="https://i.postimg.cc/N0LG7bHn/IMG-3629.png", DAZN LaLiga 2
+https://wahyu1ptv.pages.dev/DaznLaliga2-HD.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🏎 Motorsport" tvg-logo="https://i.postimg.cc/g2dNg3Zq/IMG-3660.png", DAZN F1
+http://tv.zapping.life:8080/Maximo003/dNyY9k8v4N/94466
+
+#EXTINF:-1 tvg-id="DAZN.uk" group-title="🥊 Combat Sports" tvg-logo="https://i.postimg.cc/fRB3Sn2r/IMG-2847.png", DAZN Combat
+https://dazn-combat-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-dazn-combat-rakuten/CDN/master.m3u8
+
+#EXTINF:-1 tvg-id="DAZN.us" group-title="🥊 Combat Sports" tvg-logo="https://i.postimg.cc/kX9C8BRj/IMG-2940.png", DAZN Ringside 
+https://shorturl.asia/mRCQz
+
+#EXTINF:-1 tvg-id="DAZN.es" group-title="👩 Women’s Sports" tvg-logo="https://i.postimg.cc/bwRfW5Xx/IMG-3025.png", DAZN Heldinnen
+https://tinyurl.com/pr53sszx
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇵🇹 Portugal – Sport TV" tvg-logo="https://i.postimg.cc/X7xLFvv7/IMG-3227.png", Sport-tv 1
+http://fortv.cc:8080/0n8u9R/169324/167742
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇵🇹 Portugal – Sport TV" tvg-logo="https://i.postimg.cc/G2kdPyxJ/IMG-3119.png", Sport-tv 2
+https://stream1.freetv.fun/sport-tv2-1.ctv
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇵🇹 Portugal – Sport TV" tvg-logo="https://i.postimg.cc/2jcXc594/IMG-3121.png", Sport-tv 3
+http://fortv.cc:8080/0n8u9R/169324/167744
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇵🇹 Portugal – Sport TV" tvg-logo="https://i.postimg.cc/QtN0SLp4/IMG-3123.png", Sport-tv 4
+https://stream1.freetv.fun/sport-tv4-1.ctv
+
+#EXTINF:-1 tvg-id="TV.jp" group-title="🇯🇵 Japan – J SPORTS" tvg-logo="https://i.postimg.cc/DwMwLZvq/IMG-3201.png", JSport 1
+https://mt01.utako.moe/js1/index.m3u8
+
+#EXTINF:-1 tvg-id="TV.jp" group-title="🇯🇵 Japan – J SPORTS" tvg-logo="https://i.postimg.cc/YChprH6j/IMG-3202.png", JSport 2
+https://mt01.utako.moe/js2/index.m3u8
+
+#EXTINF:-1 tvg-id="TV.jp" group-title="🇯🇵 Japan – J SPORTS" tvg-logo="https://i.postimg.cc/dVkYM9Fy/IMG-3203.png", JSport 3
+https://mt01.utako.moe/js3/index.m3u8
+
+#EXTINF:-1 tvg-id="TV.jp" group-title="🇯🇵 Japan – J SPORTS" tvg-logo="https://i.postimg.cc/jd1phJfd/IMG-3204.png", JSport 4
+https://mt01.utako.moe/js4/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇪🇸 Spain" tvg-logo="https://i.postimg.cc/wvcrbmhW/IMG-3351.png", LaLiga TV 2 por Movistar Plus
+http://eagle2024.xyz:80/fuegoipsat439/0sxi3j6w3w/970485
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇪🇸 Spain" tvg-logo="https://i.postimg.cc/nrqNMx40/IMG-3731.png", Movistar Liga de Campeones
+http://eagle2024.xyz:80/fuegoipsat439/0sxi3j6w3w/1082310
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇮🇳 India – Sony Sports" tvg-logo="https://i.postimg.cc/mkz7q2p2/IMG-3424.png", SONY Sports 1
+https://tataplay.slivcdn.com:443//hls/live/2011747/TEN1HD/master_3500.m3u8
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇮🇳 India – Sony Sports" tvg-logo="https://i.postimg.cc/VvCbgZ5J/IMG-3425.png", SONY Sports 2
+https://tataplay.slivcdn.com:443//hls/live/2020434/TEN2HD/master_3500.m3u8
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇮🇳 India – Sony Sports" tvg-logo="https://i.postimg.cc/HxjZtM5r/IMG-3426.png", SONY Sports 3
+https://tataplay.slivcdn.com:443//hls/live/2020591/TEN3HD/master_3500.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇮🇳 India – Star Sports" tvg-logo="https://i.postimg.cc/7hcB0TQV/IMG-3489.png", Star Sports 1
+http://41.205.93.154/STARSPORTS1/index.m3u8
+
+#EXTINF:-1 tvg-id="DFB.us" group-title="🇩🇪 Germany" tvg-logo="https://i.postimg.cc/02g5QSFz/IMG-2884.png", DfbplayTV
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=15795
+
+#EXTINF:-1 tvg-id="Sport.il" group-title="🇮🇹 Italy" tvg-logo="https://i.postimg.cc/7hn63YTv/IMG-2876.png", Sportitalia
+https://amg01370-italiansportcom-sportitalia-rakuten-3hmdb.amagi.tv/hls/amagi_hls_data_rakutenAA-sportitalia-rakuten/CDN/master.m3u8
+
+#EXTINF:-1 tvg-id="SSC.cz" group-title="🇸🇦 Saudi – SSC" tvg-logo="https://i.postimg.cc/2837.png", SSC 1
+https://af.ayassport.ir/hls2/ssc1.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇧🇷 Brazil – Premiere" tvg-logo="https://i.postimg.cc/4yWXTLF6/IMG-3606.webp", Premiere
+https://04-mcteteu.shop/fontes/hypexx/premiere.m3u8
+
+#EXTINF:-1 tvg-id="Premier.ir" group-title="🇬🇧 UK" tvg-logo="https://i.postimg.cc/wj9WgKwB/IMG-3034.png", Premier Sports
+https://stream1.freetv.fun/premier-sports--e-1.ctv
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇸🇬 Singapore – Hub Premier" tvg-logo="https://i.postimg.cc/fW8WTsDY/IMG-3778.png", Hub Premier 2
+http://150.129.9.194:8089/175/index.m3u8?token=test
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇸🇬 Singapore – Hub Premier" tvg-logo="https://i.postimg.cc/NfVgmxyM/IMG-3779.png", Hub Premier 3
+http://150.129.9.194:8089/163/index.m3u8?token=test
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 Eleven Sports" tvg-logo="https://i.postimg.cc/8PBDdkN7/IMG-3541.png", Eleven Sports 1
+http://vip47.activcards.info:80/live/hasn.acar/vBkg34UCu7/343340.ts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 Eleven Sports" tvg-logo="https://i.postimg.cc/cLbzwPgK/IMG-3543.png", Eleven Sports 2
+http://vip47.activcards.info:80/live/hasn.acar/vBkg34UCu7/343341.ts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 Eleven Sports" tvg-logo="https://i.postimg.cc/NfGCVQR9/IMG-3545.png", Eleven Sports 3
+http://vip47.activcards.info:80/live/hasn.acar/vBkg34UCu7/343342.ts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 Eleven Sports" tvg-logo="https://i.postimg.cc/L60DbLHw/IMG-3547.png", Eleven Sports 4
+http://vip47.activcards.info:80/live/hasn.acar/vBkg34UCu7/343343.ts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 Setanta Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Setanta_Sports.svg/1280px-Setanta_Sports.svg.png", Setanta Sports 
+http://194.26.203.25:81/8382/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 Setanta Sports" tvg-logo="https://i.postimg.cc/j5276tXY/IMG-3599.png", Setanta Sports 1
+http://194.26.203.25:81/8565/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇬🇪 Georgia – Setanta" tvg-logo="https://i.postimg.cc/j5276tXY/IMG-3599.png", Setanta Sports 1 Georgia
+http://158.101.222.193:88/georgia_play.php?id=setanta_georgia
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 Setanta Sports" tvg-logo="https://i.postimg.cc/1RvKTVsL/IMG-3817.webp", Setanta Sports 2
+http://194.26.203.25:81/8537/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇰🇿 Kazakhstan – Setanta" tvg-logo="https://i.postimg.cc/R0rrHbYQ/IMG-3819.png", Setanta Sports KZ
+http://194.26.203.25:81/8538/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇨🇦 Canada" tvg-logo="https://i.postimg.cc/KjFX6Nqg/IMG-3060.png", One Soccer 
+http://nocable.cc:8080/2gKWFe/362900/135810
+
+#EXTINF:-1 tvg-id="Manchester.uk" group-title="⚽ Clubs" tvg-logo="https://i.postimg.cc/MH1YqfC2/IMG-2961.png", MUTV
+http://1tv41.icu:8080/ahx4CN/815233/53717
+
+#EXTINF:-1 tvg-id="Liverpool.uk" group-title="⚽ Clubs" tvg-logo="https://i.postimg.cc/wjSYz3DM/IMG-3618.png", L.F.C. 
+http://150.129.9.194:8089/159/index.m3u8?token=test
+
+#EXTINF:-1 tvg-id="Realmadrid.es" group-title="⚽ Clubs" tvg-logo="https://i.postimg.cc/GpNRBHb9/IMG-2493.png", Real Madrid TV
+https://shorturl.at/v4P0h
+
+#EXTINF:-1 tvg-id="Barcelona.uk" group-title="⚽ Clubs" tvg-logo="https://i.postimg.cc/gjyq27vk/IMG-2381.png", Top Barça
+https://amg17560-fcb-amg17560c1-rakuten-uk-4891.playouts.now.amagi.tv/playlist/amg17560-fcbarcelona-topbarcaenglish-rakutenuk/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="⚽ Clubs" tvg-logo="https://i.postimg.cc/rmGchqLx/IMG-3485.png", Inter TV
+https://ilglobotv-live.akamaized.net/channels/InterTV/Live.m3u8
+
+#EXTINF:-1 tvg-id="FIFA.us" group-title="⚽ Football – FIFA" tvg-logo="https://i.postimg.cc/g0BccBJ5/IMG-2292.png", FIFA Plus 
+https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Goal.us" group-title="⚽ Football" tvg-logo="https://i.postimg.cc/QtZLwyXN/IMG-2346.png", Goal TV
+https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8
+
+#EXTINF:-1 tvg-id="TUDN.es" group-title="🇲🇽 Mexico – TUDN" tvg-logo="https://i.postimg.cc/9FH7DmYc/IMG-3003.png", Zona TUDN
+https://tinyurl.com/4f2j23a9
+
+#EXTINF:-1 tvg-id="Sportdigital.cz" group-title="🇩🇪 Germany" tvg-logo="https://i.postimg.cc/zGgZg89d/IMG-2967.png", Sportdigital Fussball 
+http://tr.tvburada.xyz:8080/Bock8294/6HqLZqAMv9/11177
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇳🇴🇸🇪 Nordics – V Sport" tvg-logo="https://i.postimg.cc/MTD0sd2g/IMG-3860.png", V Sports Football 
+http://xott.live:8080/03459612396/9512563/354425
+
+#EXTINF:-1 tvg-id="sports.uk" group-title="🇵🇱 Poland – Polsat" tvg-logo="https://i.postimg.cc/ZR5JYVst/IMG-3346.png", Polsat Sport 1
+http://bocian.io:8880/7869-00-3/NzkwMTk2MTI3/105530
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇵🇱 Poland – Polsat" tvg-logo="https://i.postimg.cc/Yq8pmcgG/IMG-3348.png", Polsat Sport 2
+http://bocian.io:8880/7869-00-3/NzkwMTk2MTI3/105533
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇵🇱 Poland – Polsat" tvg-logo="https://i.postimg.cc/nz1ZZcSc/IMG-3361.png", Polsat Sports 3
+http://bocian.io:8880/7869-00-3/NzkwMTk2MTI3/105531
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇪🇺 Canal+" tvg-logo="https://i.postimg.cc/Yqj3ngxT/IMG-3784.png", Canal Plus Football 
+http://145.239.5.177/556/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇵🇱 Poland – Canal+" tvg-logo="https://i.postimg.cc/kg3mG8JJ/IMG-3477.webp", Canal Plus Sport 2
+http://78.130.250.2:8023/play/a02w/index.m3u8
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇨🇿 Czechia – Nova Sport" tvg-logo="https://i.postimg.cc/Vsj0rjpd/IMG-3360.png", Nova Sport
+http://87.120.179.187:8000/play/a00l
+
+#EXTINF:-1 tvg-id="Liverpool.uk" group-title="🇨🇿 Czechia – Nova Sport" tvg-logo="https://i.postimg.cc/3J8vjx4k/IMG-3625.png", Nova Sport 6
+http://116.202.237.33:8080/NS6/tracks-v1a1a2a3l1l2/mono.m3u8?token=ef1c6f27da4b04de8c97b52b9255617b
+
+#EXTINF:-1 tvg-id="Arena.cz" group-title="🇷🇸 Balkans – Arena Sport" tvg-logo="https://i.postimg.cc/59ZdJpVQ/IMG-2942.png", Arena Sport 1
+http://saturn.dyndns.tv:80/play/gvw1vF1saDfmlzkSQqKO7bzSE7s1XZP_XmOnTcLzsKIMflboULtlEFrk2YMMT-xb/ts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇸 Balkans – Arena Sport" tvg-logo="https://i.postimg.cc/sXCLzsTv/IMG-3762.png", Arena Sport 2
+http://saturn.dyndns.tv:80/play/gvw1vF1saDfmlzkSQqKO7bzSE7s1XZP_XmOnTcLzsKK_lhfibZeUTwRP0wH5IOX5/ts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇸 Balkans – Arena Sport" tvg-logo="https://i.postimg.cc/LsxDsPBY/IMG-3765.png", Arena Sport 3
+http://saturn.dyndns.tv:80/play/gvw1vF1saDfmlzkSQqKO7bzSE7s1XZP_XmOnTcLzsKKIK5rl2n5meUW9b110w7T-/ts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇸 Balkans – Arena Sport" tvg-logo="https://i.postimg.cc/yxpCXWHk/IMG-3766.png", Arena Sport 4
+http://saturn.dyndns.tv:80/play/gvw1vF1saDfmlzkSQqKO7bzSE7s1XZP_XmOnTcLzsKJwgvaVf5ef2xfRW1qMuTL6/ts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇴 Romania – Prima Sport" tvg-logo="https://i.postimg.cc/4xDSDXyV/IMG-3864.webp", Prima Sport 1
+http://xott.live:8080/03459612396/9512563/353136
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇴 Romania – Prima Sport" tvg-logo="https://static.wikia.nocookie.net/tvfanon6528/images/a/a9/Prima_Sport_2_%282022-.n.v.%29.png", Prima Sport 2
+http://xott.live:8080/03459612396/9512563/353137
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇴 Romania – Prima Sport" tvg-logo="https://static.wikia.nocookie.net/tvfanon6528/images/9/9a/Prima_Sport_3_%282022-.n.v.%29.png", Prima Sport 3
+http://xott.live:8080/03459612396/9512563/353138
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇴 Romania – Prima Sport" tvg-logo="https://static.wikia.nocookie.net/tvfanon6528/images/a/a3/Prima_Sport_4_%282022-.n.v.%29.png", Prima Sport 4
+http://xott.live:8080/03459612396/9512563/353139
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇴 Romania – Prima Sport" tvg-logo="https://static.wikia.nocookie.net/tvfanon6528/images/f/f2/Prima_Sport_5_%282022-.n.v.%29.png", Prima Sport 5
+http://xott.live:8080/03459612396/9512563/353140
+
+#EXTINF:-1 tvg-id="Liverpool.uk" group-title="🇨🇴 Colombia" tvg-logo="https://i.postimg.cc/1zg2YSTS/IMG-3615.png", Win Sports  
+http://fortv.cc:8080/90820916/64752029/78717
+
+#EXTINF:-1 tvg-id="Dsports.es" group-title="🇱🇦 LATAM – DSports" tvg-logo="https://i.postimg.cc/Qx02gCBx/IMG-2761.png", DSports Plus 
+http://blast.lat:8080/live/cmy.fredyayala/Q3GVgyJaBGEG/249532.ts
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇧🇦 Balkans – Sport Klub" tvg-logo="https://i.postimg.cc/7Y0xKWG3/IMG-3703.png", SPORT KLUB
+http://703145.vpn-xtra.vip:80/92wktmwxsq/3y7k1vf0b0/14743
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇦🇪 UAE" tvg-logo="https://i.postimg.cc/266j6YKW/IMG-3585.png", Abu Dhabi Sports 1
+https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel1/HLS/index.m3u8
+
+#EXTINF:-1 tvg-id="AbuDhabiSports2.ae" group-title="🇦🇪 UAE" tvg-logo="https://i.postimg.cc/bNCcjtK4/IMG-2645.png", Abu Dhabi Sports 2 
+https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel2/HLS/index.m3u8
+
+#EXTINF:-1 tvg-id="Sports.ua" group-title="🇦🇪 UAE" tvg-logo="https://i.postimg.cc/RZXTyWbg/IMG-2284.png", Dubai Sports 1
+https://dmidspta.cdn.mgmlcdn.com/dubaisports/smil:dubaisports.stream.smil/chunklist_b3000000.m3u8
+
+#EXTINF:-1 tvg-id="Sports.ua" group-title="🇦🇪 UAE" tvg-logo="https://i.postimg.cc/DzS1NBGz/IMG-2285.png", Dubai Sports 2
+https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd/smil:dubaisportshd.smil/chunklist_b1600000.m3u8
+
+#EXTINF:-1 tvg-id="Sports.ua" group-title="🇦🇪 UAE" tvg-logo="https://i.postimg.cc/zGVLD3Gt/IMG-2286.png", Dubai Sports 3
+https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/chunklist_b1600000.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇧🇬 Bulgaria – Max Sport" tvg-logo="https://i.postimg.cc/MTD0sd2g/IMG-3860.png", Max Sport 1
+https://de11.seetv.cc/6875/video.m3u8?token=BC28182177585B5
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇧🇬 Bulgaria – Max Sport" tvg-logo="https://i.postimg.cc/W1n0Jjb1/IMG-3536.png", Max Sport 2
+https://de11.seetv.cc/6876/video.m3u8?token=BC28182177585B5
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇧🇬 Bulgaria – Max Sport" tvg-logo="https://i.postimg.cc/wBMRymGw/IMG-3538.png", Max Sport 3
+https://de11.seetv.cc/6877/video.m3u8?token=BC28182177585B5
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇧🇬 Bulgaria – Max Sport" tvg-logo="https://i.postimg.cc/SxNJ39km/IMG-3539.png", Max Sport 4
+https://de11.seetv.cc/6878/video.m3u8?token=BC28182177585B5
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇴 Romania – Digi Sport" tvg-logo="https://i.postimg.cc/T3sLbDgX/IMG-3828.png", Digi Sport 1 
+http://update.miicrosoft.es:80/nT9HvIO0eoSe9QdFqxqlpJGnhUGZ6Y/9xmjjkYHsKZOgq9fi3Fjq2bZpbAyQ4/82429
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇴 Romania – Digi Sport" tvg-logo="https://i.postimg.cc/XqnpWcS9/IMG-3830.png", Digi Sport 2
+http://update.miicrosoft.es:80/nT9HvIO0eoSe9QdFqxqlpJGnhUGZ6Y/9xmjjkYHsKZOgq9fi3Fjq2bZpbAyQ4/82430
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇴 Romania – Digi Sport" tvg-logo="https://i.postimg.cc/3NzVp98v/IMG-3832.png", Digi Sport 3
+http://update.miicrosoft.es:80/nT9HvIO0eoSe9QdFqxqlpJGnhUGZ6Y/9xmjjkYHsKZOgq9fi3Fjq2bZpbAyQ4/82431
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇴 Romania – Digi Sport" tvg-logo="https://i.postimg.cc/fbMFxVNB/IMG-3834.png", Digi Sport 4
+http://update.miicrosoft.es:80/nT9HvIO0eoSe9QdFqxqlpJGnhUGZ6Y/9xmjjkYHsKZOgq9fi3Fjq2bZpbAyQ4/82432
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇮🇹 Italy" tvg-logo="https://i.postimg.cc/wT5dJBj5/IMG-3459.png", Rai Sport
+http://germanytv.net:8080/play/live.php?mac=A0:BB:3E:02:78:09&stream=244078&extension=m3u8
+
+#EXTINF:-1 tvg-id="CTSport.cz" group-title="🇨🇿 Czechia" tvg-logo="https://i.postimg.cc/hGDFwMy7/IMG-3040.png", CT Sport 
+http://88.212.15.19/live/test_ctsport_25p/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SharjahSports.ae" group-title="🇦🇪 UAE" tvg-logo="https://i.postimg.cc/wxSPC5Db/IMG-2977.png", Sharjah Sports
+https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇶🇦 Qatar" tvg-logo="https://i.postimg.cc/MKMqfRTw/IMG-3822.png", Q Sport League 
+http://194.26.203.25:81/8539/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="" group-title="🇰🇿 Kazakhstan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Qazsport_logo.svg/1280px-Qazsport_logo.svg.png", Qazsport
+http://194.26.203.25:81/8541/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🇪🇸 Spain" tvg-logo="https://i.postimg.cc/X703KL79/IMG-3327.png", Teledeporte
+https://d1cctoeg0n48w5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-mnixw9wn5ugmv/TeledeporteES.m3u8
+
+#EXTINF:-1 tvg-id="tycsports.es" group-title="🇦🇷 Argentina" tvg-logo="https://i.postimg.cc/8Cc1fRPG/IMG-2964.png", TyC Sports
+https://shorturl.asia/su9Yt
+
+#EXTINF:-1 tvg-id="Sports.tr" group-title="🇹🇷 Turkey" tvg-logo="https://i.postimg.cc/jq3nf8LS/IMG-3020.png", SportsTV
+https://live.sportstv.com.tr/hls/low/sportstv.m3u8
+
+#EXTINF:-1 tvg-id="TRT.tr" group-title="🇹🇷 Turkey" tvg-logo="https://i.postimg.cc/3xg6Vfvg/IMG-3453.png", TRT Spor 
+http://194.26.203.25:81/8827/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇺 Russia – Match" tvg-logo="https://i.postimg.cc/6qQVRh2Y/IMG-3665.png", Match Football 1
+http://194.26.203.25:81/8236/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇺 Russia – Match" tvg-logo="https://i.postimg.cc/HLCQ3m8J/IMG-3666.png", Match Football 2
+http://194.26.203.25:81/8237/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇺 Russia – Match" tvg-logo="https://i.postimg.cc/c4pY4WmD/IMG-3667.png", Match Football 3
+http://194.26.203.25:81/8238/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇺 Russia – Match" tvg-logo="https://i.postimg.cc/zvWkBH7J/IMG-3837.png", Match Premier
+http://194.26.203.25:81/8023/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇺 Russia – Match" tvg-logo="https://i.postimg.cc/mZ1Wx7JK/IMG-3840.png", Match Game 
+http://194.26.203.25:81/8024/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇷🇺 Russia – Match" tvg-logo="https://i.postimg.cc/J02tSScX/IMG-3650.png", Match arena
+http://194.26.203.25:81/8018/video.m3u8?token=CZPkVoWF8tgBYvi1
+
+#EXTINF:-1 tvg-id="sport.ru" group-title="🇷🇺 Russia – Match" tvg-logo="https://i.postimg.cc/d3W9Ykkx/IMG-3616.webp", Match
+http://94.130.221.219/match/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 East Africa – Azam" tvg-logo="https://i.postimg.cc/RFd0HW6T/IMG-3795.png", azam sports 1
+http://145.239.5.177/568/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 East Africa – Azam" tvg-logo="https://i.postimg.cc/hvGtbKVR/IMG-3796.png", azam sports 2
+http://145.239.5.177/569/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 East Africa – Azam" tvg-logo="https://i.postimg.cc/htCWTVpv/IMG-3800.png", azam sports 3
+http://145.239.5.177/570/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇸🇰 Slovakia" tvg-logo="https://i.postimg.cc/509G62Dw/IMG-3652.png", RTVS Sport 
+http://88.212.15.27/live/test_rtvs_sport_hevc/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TV.gr" group-title="🇬🇪 Georgia" tvg-logo="https://i.postimg.cc/vTXtHmSj/IMG-3167.png", 2TV Sport
+https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇮🇩 Indonesia" tvg-logo="https://i.postimg.cc/rsWxqwrs/IMG-3472.png", TVRI Sport
+https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🌍 International" tvg-logo="https://i.postimg.cc/PfRN1hKX/IMG-3555.png", 4Sports
+https://pepsi.abntv.live/hls/4spstream.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇦🇿 Azerbaijan" tvg-logo="https://i.postimg.cc/XJrDcdTP/IMG-3474.png", CBC Sports 
+https://mn-nl.mncdn.com/cbcsports_live/cbcsports/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KTV.tr" group-title="🇰🇼 Kuwait" tvg-logo="https://i.postimg.cc/PxRZdKDJ/IMG-3023.png", KTV Sport Plus
+https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist_b8000000_t64MTA4MHA=.m3u8
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🇹🇷 Turkey" tvg-logo="https://i.postimg.cc/cCbCs3yv/IMG-3603.png", Aspor 
+http://31.43.191.210:8080/cs22cs.suroot/4amFSTThYHGGS2223/10165
+
+#EXTINF:-1 tvg-id="Fubo.us" group-title="🇺🇸 USA – FAST" tvg-logo="https://i.postimg.cc/zfDf5rpP/IMG-2767.png", Fubo Sports 
+https://ad993ce7.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEdfRnVib1Nwb3J0c05ldHdvcmtfSExT/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Golf.us" group-title="⛳ Golf" tvg-logo="https://i.postimg.cc/5yh0TtNC/IMG-2324.png", NBC Golf
+http://fl1.moveonjoy.com/GOLF/index.m3u8
+
+#EXTINF:-1 tvg-id="PGATour.us" group-title="⛳ Golf" tvg-logo="https://i.postimg.cc/xqDs8HJn/IMG-2384.png", PGA Tour
+https://tinyurl.com/5ab4nkj8
+
+#EXTINF:-1 tvg-id="Billiard.uk" group-title="🎱 Billiards" tvg-logo="https://i.postimg.cc/PryXKbr7/IMG-2264.png", Billiard TV
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=840
+
+#EXTINF:-1 tvg-id="Worldbilliards.kr" group-title="🎱 Billiards" tvg-logo="https://i.postimg.cc/wMz7TdjC/IMG-2248.png", World Billiards TV
+https://shorturl.at/iTUf5
+
+#EXTINF:-1 tvg-id="Kozoom.us" group-title="🎱 Billiards" tvg-logo="https://i.postimg.cc/DygVTbTk/IMG-2869.png", Kozoom
+https://tinyurl.com/3ted8am7
+
+#EXTINF:-1 tvg-id="poker.es" group-title="🃏 Poker" tvg-logo="https://i.postimg.cc/qRfbXcFq/IMG-3479.png", World Poker Tour
+https://tinyurl.com/ymt52m6r
+
+#EXTINF:-1 tvg-id="FTFsports.us" group-title="🇺🇸 USA – FAST" tvg-logo="https://i.postimg.cc/8P3RsZDh/IMG-2871.png", FTF Sports 
+https://1199970269.rsc.cdn77.org/FTF/FTF_SCTE_Ultra.m3u8
+
+#EXTINF:-1 tvg-id="WFS.us" group-title="🪂 Action Sports" tvg-logo="https://i.postimg.cc/d3DSdV0Z/IMG-3147.png", World of Free Sports 
+https://shorturl.asia/8LUnO
+
+#EXTINF:-1 tvg-id="Trace.au" group-title="🌍 International" tvg-logo="https://i.postimg.cc/TPwGsdrc/IMG-2012.png", Trace Sports
+https://lightning-tracesport-samsungau.amagi.tv/playlist1080p.m3u8
+
+#EXTINF:-1 tvg-id="Pac12.us" group-title="🇺🇸 USA – College Sports" tvg-logo="https://i.postimg.cc/L4DSDX3Q/IMG-2647.png", Pac12 insider
+https://pac12-samsungus.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="womensports.us" group-title="👩 Women’s Sports" tvg-logo="https://i.postimg.cc/XJDnhgDs/IMG-2348.png", Women's Sports Network
+https://apollo.production-public.tubi.io/live/ac-fast-studios-womens-sports.m3u8 
+
+#EXTINF:-1 tvg-id="MAV.us" group-title="🏎 Motorsport" tvg-logo="https://i.postimg.cc/kMZRC3qw/IMG-2839.png", MAVTV
+https://amg00378-mavtv-amg00378c2-rakuten-us-1048.playouts.now.amagi.tv/playlist/amg00378-mavtvfast-motorsportsnetwork-rakutenus/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FOX.us" group-title="🏎 Motorsport" tvg-logo="https://i.postimg.cc/RV0Sq5B3/IMG-2482.png", NHRA
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=732
+
+#EXTINF:-1 tvg-id="Motorracing.us" group-title="🏎 Motorsport" tvg-logo="https://i.postimg.cc/jqc8vBJ4/IMG-2499.png", Motor Racing 
+https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/motorracing/f34ba059-f7c4-4d2b-afb2-6e7b03553966/2.m3u8
+
+#EXTINF:-1 tvg-id="Motorsport.eu" group-title="🏎 Motorsport" tvg-logo="https://i.postimg.cc/sxrFVjLL/IMG-2897.png", Motorsport tv
+https://eu.linear.zype.com/34713153-3597-42c0-bd0d-5023c3f60585/7823e98c-2e5f-49cf-8e73-425e237b86ff-hls4/live.m3u8
+
+#EXTINF:-1 tvg-id="MTRSPT.us" group-title="🏎 Motorsport" tvg-logo="https://i.postimg.cc/Hns20F8x/IMG-2883.png", MTRSPT 1
+https://tinyurl.com/bdhme28r
+
+#EXTINF:-1 tvg-id="Motorvision.us" group-title="🏎 Motorsport" tvg-logo="https://i.postimg.cc/pL7dtZvb/IMG-2177.png", Motorvision TV
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=443
+
+#EXTINF:-1 tvg-id="TN.us" group-title="🏎 Motorsport" tvg-logo="https://i.postimg.cc/TY6pz58D/IMG-3444.png", BIKE Channel
+https://cdn09.milano.nxmedge.net/bikechannel/video.m3u8
+
+#EXTINF:-1 tvg-id="Redbull.us" group-title="🪂 Action Sports" tvg-logo="https://i.postimg.cc/QCDrKFgh/IMG-1983.png", Red Bull TV
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8
+
+#EXTINF:-1 tvg-id="UFC.us" group-title="🥊 Combat Sports" tvg-logo="https://i.postimg.cc/X7yvj7SP/IMG-2153.webp", UFC
+https://aegis-cloudfront-1.tubi.video/a78ea283-8666-44a1-a0f6-fde5d229ac21/playlist.m3u8
+
+#EXTINF:-1 tvg-id="BareKnuckle.us" group-title="🥊 Combat Sports" tvg-logo="https://i.postimg.cc/8kF13fSc/IMG-2577.png", Bare Knuckle tv
+https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/486.m3u8
+
+#EXTINF:-1 tvg-id="TNT.us" group-title="🥊 Combat Sports" tvg-logo="https://i.postimg.cc/VNyKZNHJ/IMG-3062.png", WWE
+http://fortv.cc:8080/0n8u9R/169324/11645
+
+#EXTINF:-1 tvg-id="TV.jp" group-title="🥊 Combat Sports" tvg-logo="https://i.postimg.cc/k4yLXn4B/IMG-3271.png", Fighting TV Samurai
+https://ca01.utako.moe/fighting_tv/index.m3u8
+
+#EXTINF:-1 tvg-id="ITV.fr" group-title="🇪🇸 Spain" tvg-logo="https://i.postimg.cc/QNq3XCNC/IMG-3139.png", ITV Deportes
+https://thm-it-roku.otteravision.com/thm/it/it.m3u8
