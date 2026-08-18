@@ -1,10 +1,10 @@
+from curl_cffi import requests
+from bs4 import BeautifulSoup
+import json
 import os
 import time
-import json
 from datetime import datetime
-from bs4 import BeautifulSoup
 from urllib.parse import urlparse, parse_qs, unquote
-from seleniumbase import SB
 
 # ================== CONFIG ==================
 DOMAIN = "https://kicksball.com"
@@ -14,13 +14,17 @@ OUTPUT_FILE = os.path.join(SAVE_DIR, "kicksball_tv.txt")
 
 # ================== ฟังก์ชันช่วยเหลือ ==================
 def format_url(url_path):
-    if not url_path: return ""
-    if url_path.startswith('http'): return url_path
-    elif url_path.startswith('//'): return f"https:{url_path}"
-    else: return f"{DOMAIN}/{url_path.lstrip('/')}"
+    if not url_path:
+        return ""
+    if url_path.startswith('http'):
+        return url_path
+    elif url_path.startswith('//'):
+        return f"https:{url_path}"
+    else:
+        return f"{DOMAIN}/{url_path.lstrip('/')}"
 
 def extract_original_image(proxy_url):
-    """ถอดรหัสรูปภาพที่ถูกหุ้มด้วย Proxy กลับเป็น URL ต้นฉบับ"""
+    """ถอดรหัสรูปภาพผ่าน Proxy ให้เป็นภาพต้นฉบับ"""
     if '/img/proxy?u=' in proxy_url:
         try:
             parsed = urlparse(proxy_url)
@@ -33,48 +37,41 @@ def extract_original_image(proxy_url):
 
 # ================== ฟังก์ชันดึงข้อมูล ==================
 def scrape_kicksball_tv():
-    print("⚙️ กำลังเตรียมเบราว์เซอร์ Chrome บนเซิร์ฟเวอร์ Windows...")
-    all_groups_data = []
-    html_source = ""
-
-    # 🌟 รันบน Windows แบบ headless=False จะเปิดหน้าต่างแอป Chrome ของจริงขึ้นมา!
+    print(f"📡 กำลังเชื่อมต่อไปยัง {START_URL} ด้วยระบบจำลองลายนิ้วมือเบราว์เซอร์ (TLS Fingerprint)...")
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Language': 'th-TH,th;q=0.9,en-US;q=0.8,en;q=0.7',
+        'Referer': DOMAIN
+    }
+    
     try:
-        with SB(uc=True, headless=False, window_size="1920,1080") as sb:
-            print(f"📡 กำลังบุกเข้าไปยัง {START_URL} ...")
+        # 🌟 ใช้ curl_cffi ปลอมแปลง TLS เพื่อหลบเลี่ยง Cloudflare ระดับเครือข่าย
+        response = requests.get(START_URL, headers=headers, impersonate="chrome120", timeout=20)
+        
+        if response.status_code == 403 or "Just a moment" in response.text:
+            print("⚠️ ยังคงติดหน้าป้องกันของ Cloudflare ขอสลับพอร์ตเชื่อมต่อสำรอง...")
+            # ลองเปลี่ยนมาใช้ตัวเลือกจำลองเบราว์เซอร์แบบอื่น
+            response = requests.get(START_URL, headers=headers, impersonate="safari15_3", timeout=20)
             
-            # เปิดหน้าเว็บ
-            sb.uc_open_with_reconnect(START_URL, reconnect_time=4)
-            
-            try:
-                # ถ้าเจอ Captcha ให้ลองคลิก
-                sb.uc_gui_click_captcha()
-                time.sleep(3)
-            except:
-                pass 
-                
-            try:
-                # รอจนกว่าจะเจอช่องทีวี (แปลว่าหลุดจากหน้า Cloudflare แล้ว)
-                sb.wait_for_element('.tv-section', timeout=25)
-                html_source = sb.get_page_source()
-                print("✅ ทะลวงหน้า Cloudflare สำเร็จ! โหลดข้อมูลครบถ้วน")
-            except Exception as e:
-                print("❌ ทะลวงด่าน Cloudflare ไม่สำเร็จ (Cloudflare ไม่ยอมปล่อยผ่าน)")
-                print("🔍 Snapshot:", sb.get_page_source()[:500])
-                return []
-                
+        response.raise_for_status()
+        html_content = response.text
+        
     except Exception as e:
-        print(f"❌ เกิดข้อผิดพลาดในการเปิดเบราว์เซอร์: {e}")
+        print(f"❌ เชื่อมต่อล้มเหลว: {e}")
         return []
 
-    # ================== เริ่มขั้นตอนแกะข้อมูลจาก HTML ==================
-    print("⛏️ กำลังสกัดข้อมูลทีวีทั้งหมด...")
-    soup = BeautifulSoup(html_source, 'html.parser')
+    soup = BeautifulSoup(html_content, 'html.parser')
+    all_groups_data = []
+    
+    # ดึง Section ของแต่ละหมวดหมู่ทีวี
     sections = soup.find_all('section', class_='tv-section')
-
+    
     if not sections:
-        print("⚠️ ไม่พบโครงสร้างรายการทีวีบนหน้าเว็บ")
+        print("⚠️ ไม่พบโครงสร้างรายการทีวีบนหน้าเว็บ (อาจจะยังติดหน้าป้องกัน)")
         return []
-
+        
     for section in sections:
         title_tag = section.find('h2', class_='section-title')
         category_name = title_tag.text.strip() if title_tag else "หมวดหมู่ทั่วไป"
@@ -86,12 +83,15 @@ def scrape_kicksball_tv():
         cards = section.find_all('a', class_='tv-card')
         
         for card in cards:
-            full_link = format_url(card.get('href', ''))
+            card_href = card.get('href', '')
+            full_link = format_url(card_href)
+            
             name_tag = card.find('span', class_='tv-name')
             channel_name = name_tag.text.strip() if name_tag else "ไม่ทราบชื่อช่อง"
             
             img_tag = card.find('img')
-            clean_img = extract_original_image(img_tag.get('src', '') if img_tag else "")
+            raw_img_src = img_tag.get('src', '') if img_tag else ""
+            clean_img = extract_original_image(raw_img_src)
             
             movies_data.append({
                 "name": channel_name,
@@ -104,7 +104,7 @@ def scrape_kicksball_tv():
             
         print(f"✅ ดึงสำเร็จ {len(movies_data)} ช่อง")
         
-        # กรองตัวซ้ำ
+        # กรองช่องที่ซ้ำ
         unique_movies = []
         seen = set()
         for m in movies_data:
@@ -131,7 +131,7 @@ def scrape_kicksball_tv():
 # ================== Main Program ==================
 if __name__ == "__main__":
     start_time = time.time()
-    print("🚀 เริ่มต้นโปรเจกต์ดึงข้อมูลทีวี KicksBall (Windows Runner Hack)\n")
+    print("🚀 เริ่มต้นโปรเจกต์ดึงข้อมูลทีวี KicksBall (API Direct Bypass)\n")
     
     groups_data = scrape_kicksball_tv()
     
