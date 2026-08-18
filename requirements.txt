@@ -1,3 +1,2 @@
 beautifulsoup4
-undetected-chromedriver
-webdriver-manager
+seleniumbase
