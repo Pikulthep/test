@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   run-tv-scraper:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # 🌟 ไม้ตาย: เปลี่ยนเซิร์ฟเวอร์เป็น Windows!
     timeout-minutes: 15
 
     steps:
@@ -23,23 +23,21 @@ jobs:
           python-version: '3.9'
           cache: 'pip' 
 
-      # 🌟 ติดตั้งระบบหน้าจอเสมือน (Xvfb)
-      - name: Install Display Server (Xvfb)
-        run: sudo apt-get install -y xvfb
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Create output directory
-        run: mkdir -p output
+        run: mkdir output
 
-      # 🌟 รันสคริปต์ภายใต้หน้าจอเสมือน (xvfb-run)
+      # 🌟 รันสคริปต์บน Windows ตรงๆ (มันจะเปิด Chrome ขึ้นมาแบบมีหน้าต่างจริงๆ)
       - name: Run KicksBall TV Script
-        run: xvfb-run --auto-servernum python kicksball_tv.py
+        run: python kicksball_tv.py
 
+      # ใช้ shell: bash เพื่อให้คำสั่ง Git ทำงานได้ปกติบน Windows
       - name: Commit and Push results
+        shell: bash
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
