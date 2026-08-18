@@ -33,32 +33,32 @@ def extract_original_image(proxy_url):
 
 # ================== ฟังก์ชันดึงข้อมูล ==================
 def scrape_kicksball_tv():
-    print("⚙️ กำลังเตรียมเบราว์เซอร์ขั้นสุดยอด (SeleniumBase UC Mode)...")
+    print("⚙️ กำลังเตรียมเบราว์เซอร์ Chrome บนเซิร์ฟเวอร์ Windows...")
     all_groups_data = []
+    html_source = ""
 
-    # 🌟 พระเอกของเรา: เปิดเบราว์เซอร์ด้วย SeleniumBase โหมด UC (Undetected)
+    # 🌟 รันบน Windows แบบ headless=False จะเปิดหน้าต่างแอป Chrome ของจริงขึ้นมา!
     try:
-        with SB(uc=True, headless=False) as sb:
+        with SB(uc=True, headless=False, window_size="1920,1080") as sb:
             print(f"📡 กำลังบุกเข้าไปยัง {START_URL} ...")
             
-            # ใช้ท่าไม้ตาย: เปิดเว็บและต่อเน็ตใหม่ซ้ำๆ เพื่อสลัดการจับตามองของ Cloudflare
+            # เปิดหน้าเว็บ
             sb.uc_open_with_reconnect(START_URL, reconnect_time=4)
             
-            print("⏳ เจอหน้า Just a moment... กำลังสั่งให้ AI คลิกปุ่ม 'ฉันเป็นมนุษย์' ...")
             try:
-                # 🌟 ฟังก์ชันหาและคลิกกล่อง Captcha ให้อัตโนมัติ!
+                # ถ้าเจอ Captcha ให้ลองคลิก
                 sb.uc_gui_click_captcha()
                 time.sleep(3)
             except:
-                pass # ถ้าโชคดีไม่มีกล่องให้คลิก ก็ปล่อยผ่านไปเลย
+                pass 
                 
             try:
-                # รอจนกว่าจะโหลดผ่านเข้ามาเจอโครงสร้างทีวี
-                sb.wait_for_element('.tv-section', timeout=20)
+                # รอจนกว่าจะเจอช่องทีวี (แปลว่าหลุดจากหน้า Cloudflare แล้ว)
+                sb.wait_for_element('.tv-section', timeout=25)
                 html_source = sb.get_page_source()
-                print("✅ ทะลวงหน้า Just a moment สำเร็จ! เข้าถึงข้อมูลแล้ว")
+                print("✅ ทะลวงหน้า Cloudflare สำเร็จ! โหลดข้อมูลครบถ้วน")
             except Exception as e:
-                print("❌ ทะลวงด่าน Cloudflare ไม่สำเร็จ (IP ของ GitHub อาจจะโดนแบนถาวร)")
+                print("❌ ทะลวงด่าน Cloudflare ไม่สำเร็จ (Cloudflare ไม่ยอมปล่อยผ่าน)")
                 print("🔍 Snapshot:", sb.get_page_source()[:500])
                 return []
                 
@@ -131,7 +131,7 @@ def scrape_kicksball_tv():
 # ================== Main Program ==================
 if __name__ == "__main__":
     start_time = time.time()
-    print("🚀 เริ่มต้นโปรเจกต์ดึงข้อมูลทีวี KicksBall (SeleniumBase Auto-Clicker)\n")
+    print("🚀 เริ่มต้นโปรเจกต์ดึงข้อมูลทีวี KicksBall (Windows Runner Hack)\n")
     
     groups_data = scrape_kicksball_tv()
     
