@@ -10,8 +10,11 @@ permissions:
 
 jobs:
   run-tv-scraper:
-    runs-on: windows-latest  # 🌟 ไม้ตาย: เปลี่ยนเซิร์ฟเวอร์เป็น Windows!
+    runs-on: windows-latest
     timeout-minutes: 15
+    # 🌟 ไม้ตายแก้ปัญหาพิมพ์ Emoji และภาษาไทยไม่ออกบน Windows
+    env:
+      PYTHONIOENCODING: utf-8 
 
     steps:
       - name: Checkout code
@@ -31,11 +34,9 @@ jobs:
       - name: Create output directory
         run: mkdir output
 
-      # 🌟 รันสคริปต์บน Windows ตรงๆ (มันจะเปิด Chrome ขึ้นมาแบบมีหน้าต่างจริงๆ)
       - name: Run KicksBall TV Script
         run: python kicksball_tv.py
 
-      # ใช้ shell: bash เพื่อให้คำสั่ง Git ทำงานได้ปกติบน Windows
       - name: Commit and Push results
         shell: bash
         run: |
