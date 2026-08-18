@@ -1,4 +1,4 @@
-import requests
+from curl_cffi import requests
 from bs4 import BeautifulSoup
 import json
 import os
@@ -41,13 +41,9 @@ def extract_original_image(proxy_url):
 def scrape_kicksball_tv():
     print(f"📡 กำลังเชื่อมต่อไปยัง {START_URL} ...")
     
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-    }
-    
     try:
-        res = requests.get(START_URL, headers=headers, timeout=15)
+        # 🌟 จุดสำคัญ: ใช้ curl_cffi จำลองตัวเองเป็น Google Chrome เพื่อหลบ 403 Forbidden
+        res = requests.get(START_URL, impersonate="chrome", timeout=15)
         res.raise_for_status() # เช็คว่าเว็บล่มไหม
     except Exception as e:
         print(f"❌ เชื่อมต่อล้มเหลว: {e}")
@@ -56,11 +52,11 @@ def scrape_kicksball_tv():
     soup = BeautifulSoup(res.text, 'html.parser')
     all_groups_data = []
     
-    # 🌟 หา Section ของแต่ละหมวดหมู่ (เช่น กีฬา, ข่าว, บันเทิง)
+    # หา Section ของแต่ละหมวดหมู่
     sections = soup.find_all('section', class_='tv-section')
     
     if not sections:
-        print("⚠️ ไม่พบโครงสร้างรายการทีวีบนหน้าเว็บ")
+        print("⚠️ ไม่พบโครงสร้างรายการทีวีบนหน้าเว็บ (อาจจะโดนบล็อกแบบเงียบๆ)")
         return []
         
     for section in sections:
@@ -130,7 +126,7 @@ def scrape_kicksball_tv():
 # ================== Main Program ==================
 if __name__ == "__main__":
     start_time = time.time()
-    print("🚀 เริ่มต้นโปรเจกต์ดึงข้อมูลทีวี KicksBall (Fast Scrape)\n")
+    print("🚀 เริ่มต้นโปรเจกต์ดึงข้อมูลทีวี KicksBall (Anti-403 Scrape)\n")
     
     groups_data = scrape_kicksball_tv()
     
@@ -154,6 +150,7 @@ if __name__ == "__main__":
         print(f"\n🎉 บันทึกข้อมูลสำเร็จ! ตรวจสอบไฟล์ได้ที่ {OUTPUT_FILE}")
     else:
         print("\n❌ ไม่สามารถสร้างไฟล์ได้ เนื่องจากดึงข้อมูลไม่สำเร็จ")
+        exit(1) # ส่งสัญญาณให้ GitHub Actions รู้ว่าพัง จะได้หยุดทำงานทันที ไม่ต้องไป Error 128 ทีหลัง
         
     elapsed = time.time() - start_time
     print(f"⏱️ ใช้เวลาทำงานทั้งหมด: {elapsed:.2f} วินาที")
