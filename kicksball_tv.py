@@ -4,11 +4,7 @@ import json
 from datetime import datetime
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, parse_qs, unquote
-import undetected_chromedriver as uc
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
+from seleniumbase import SB
 
 # ================== CONFIG ==================
 DOMAIN = "https://kicksball.com"
@@ -35,69 +31,48 @@ def extract_original_image(proxy_url):
             pass
     return format_url(proxy_url)
 
-def get_driver():
-    """เปิดเบราว์เซอร์ล่องหนแบบ Native (ไม่ดัดแปลงเพื่อหลอก Cloudflare ให้เนียนที่สุด)"""
-    options = uc.ChromeOptions()
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--window-size=1920,1080")
-    
-    # ❌ ลบ User-Agent และ AutomationControlled ออก เพื่อให้ UC พรางตัวแบบธรรมชาติที่สุด
-    
-    # ปิดการโหลดรูปเพื่อความรวดเร็ว
-    prefs = {"profile.managed_default_content_settings.images": 2}
-    options.add_experimental_option("prefs", prefs)
-
-    driver_path = ChromeDriverManager().install()
-    # headless=False เพื่อทะลวงผ่านหน้าจอเสมือน Xvfb
-    driver = uc.Chrome(driver_executable_path=driver_path, options=options, headless=False)
-    
-    # เผื่อเวลาให้เน็ตและ Cloudflare
-    driver.set_page_load_timeout(60)
-    return driver
-
 # ================== ฟังก์ชันดึงข้อมูล ==================
 def scrape_kicksball_tv():
-    print(f"⚙️ กำลังเตรียมเบราว์เซอร์ล่องหน (Xvfb)...")
-    try:
-        driver = get_driver()
-    except Exception as e:
-        print(f"❌ เปิดเบราว์เซอร์ไม่สำเร็จ: {e}")
-        return []
-
-    print(f"📡 กำลังบุกเข้าไปยัง {START_URL} ...")
-    try:
-        time.sleep(2) # ให้เบราว์เซอร์ตั้งสติก่อนยิง URL
-        driver.get(START_URL)
-        
-        print("⏳ กำลังรอให้ Cloudflare ตรวจสอบ (อาจใช้เวลา 15-45 วินาที)...")
-        # 🌟 เพิ่มเวลารอเป็น 60 วินาที เผื่อเซิร์ฟเวอร์ GitHub โหลดช้า
-        WebDriverWait(driver, 60).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, '.tv-section'))
-        )
-        time.sleep(2) # รอเรนเดอร์เนื้อหาอีกนิด
-        html_source = driver.page_source
-        print("✅ เจาะทะลุระบบป้องกัน Cloudflare สำเร็จแล้ว!")
-        
-    except Exception as e:
-        print(f"❌ โหลดหน้าเว็บไม่สำเร็จ (ติดลูป Cloudflare หรือหมดเวลา)")
-        # ปรินต์ HTML ทิ้งท้ายไว้ดูว่ามันติดหน้าอะไร
-        try:
-            print("🔍 Snapshot หน้าที่ติดปัญหา:", driver.page_source[:500])
-        except:
-            pass
-        driver.quit()
-        return []
-    finally:
-        driver.quit() # กวาด HTML เสร็จ ปิดเบราว์เซอร์ได้เลย
-
-    # เริ่มขั้นตอนแกะข้อมูลจาก HTML
-    soup = BeautifulSoup(html_source, 'html.parser')
+    print("⚙️ กำลังเตรียมเบราว์เซอร์ขั้นสุดยอด (SeleniumBase UC Mode)...")
     all_groups_data = []
+
+    # 🌟 พระเอกของเรา: เปิดเบราว์เซอร์ด้วย SeleniumBase โหมด UC (Undetected)
+    try:
+        with SB(uc=True, headless=False) as sb:
+            print(f"📡 กำลังบุกเข้าไปยัง {START_URL} ...")
+            
+            # ใช้ท่าไม้ตาย: เปิดเว็บและต่อเน็ตใหม่ซ้ำๆ เพื่อสลัดการจับตามองของ Cloudflare
+            sb.uc_open_with_reconnect(START_URL, reconnect_time=4)
+            
+            print("⏳ เจอหน้า Just a moment... กำลังสั่งให้ AI คลิกปุ่ม 'ฉันเป็นมนุษย์' ...")
+            try:
+                # 🌟 ฟังก์ชันหาและคลิกกล่อง Captcha ให้อัตโนมัติ!
+                sb.uc_gui_click_captcha()
+                time.sleep(3)
+            except:
+                pass # ถ้าโชคดีไม่มีกล่องให้คลิก ก็ปล่อยผ่านไปเลย
+                
+            try:
+                # รอจนกว่าจะโหลดผ่านเข้ามาเจอโครงสร้างทีวี
+                sb.wait_for_element('.tv-section', timeout=20)
+                html_source = sb.get_page_source()
+                print("✅ ทะลวงหน้า Just a moment สำเร็จ! เข้าถึงข้อมูลแล้ว")
+            except Exception as e:
+                print("❌ ทะลวงด่าน Cloudflare ไม่สำเร็จ (IP ของ GitHub อาจจะโดนแบนถาวร)")
+                print("🔍 Snapshot:", sb.get_page_source()[:500])
+                return []
+                
+    except Exception as e:
+        print(f"❌ เกิดข้อผิดพลาดในการเปิดเบราว์เซอร์: {e}")
+        return []
+
+    # ================== เริ่มขั้นตอนแกะข้อมูลจาก HTML ==================
+    print("⛏️ กำลังสกัดข้อมูลทีวีทั้งหมด...")
+    soup = BeautifulSoup(html_source, 'html.parser')
     sections = soup.find_all('section', class_='tv-section')
 
     if not sections:
-        print("⚠️ ไม่พบโครงสร้างรายการทีวีบนหน้าเว็บ (อาจจะดึงมาได้แค่หน้าเปล่าๆ)")
+        print("⚠️ ไม่พบโครงสร้างรายการทีวีบนหน้าเว็บ")
         return []
 
     for section in sections:
@@ -156,7 +131,7 @@ def scrape_kicksball_tv():
 # ================== Main Program ==================
 if __name__ == "__main__":
     start_time = time.time()
-    print("🚀 เริ่มต้นโปรเจกต์ดึงข้อมูลทีวี KicksBall (Pure Native Stealth)\n")
+    print("🚀 เริ่มต้นโปรเจกต์ดึงข้อมูลทีวี KicksBall (SeleniumBase Auto-Clicker)\n")
     
     groups_data = scrape_kicksball_tv()
     
