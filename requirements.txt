@@ -1,2 +1,2 @@
 beautifulsoup4
-seleniumbase
+curl_cffi
